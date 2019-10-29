@@ -1,0 +1,32 @@
+﻿@model CalcModel
+@{
+    ViewData["Title"] = "Calculate";
+}
+
+<h2>Calculate</h2>
+
+@using(Html.BeginForm(FormMethod.Post, new { @class = "form-inline" }))
+{
+	<div class="form-group">
+	    <label>First Number</label>
+		<br />
+	    @Html.TextBoxFor(m => m.FirstNumber, new { @class = "form-control" })
+	</div>
+	<br />
+	<div class="form-group">
+	    <label>Second Number</label>
+		<br />
+	    @Html.TextBoxFor(m => m.SecondNumber, new { @class = "form-control" })
+	</div>
+	<br /><br />
+	<input type="submit" id="submit" class="btn" value="Submit"/>
+}
+
+<br />
+<div class="form-inline">
+	<div class="form-group">
+		<label>Result</label>
+		<br />
+		@Html.TextBoxFor(m => m.Result, new { @readonly = true, @class = "form-control" })
+	</div>
+</div>
