@@ -1,4 +1,5 @@
 ﻿using BDD.Models;
+using System;
 using TechTalk.SpecFlow;
 using Xunit;
 
@@ -25,12 +26,6 @@ namespace BDD.Tests
         public void DadoQueEuInformeTambemONumeroNaCalculadora(int number)
         {
             _calculator.SecondNumber = number;
-        }
-
-        [Given(@"Eu informar também o número (.*) na calculadora")]
-        public void DadoEuInformarTambemONumeroNaCalculadora(int number)
-        {
-
         }
 
         [When(@"Eu clicar em Somar")]

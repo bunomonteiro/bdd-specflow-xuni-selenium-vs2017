@@ -10,7 +10,7 @@ namespace BDD.Tests
     [Binding]
     public class CalculatorSteps : IDisposable
     {
-        private const string URL = "http://localhost:5000/Home/Calculate";
+        private const string URL = "http://localhost:10751/Home/Calculate";
         private IWebDriver _browser;
         private WebDriverWait _wait;
 
